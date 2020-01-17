@@ -13,7 +13,7 @@
 #include <stdlib.h>
 
 FILE *fichier;
-fichier=fopen("test94.txt", "a");
+fichier=fopen("C:\test94.txt", "a");
 
 int windows = 0;
 
