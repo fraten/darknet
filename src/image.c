@@ -12,10 +12,21 @@
 
 #include <stdlib.h>
 
-FILE *fp;
-fp=fopen("C:/test94.txt", "w");
-//fichier = fopen(“C:/Data/fichier1.txt”,”r”);
 
+
+#define ENTREE "C:/test94.tx"
+
+
+  FILE *f_in;
+ 
+  if ((f_in = fopen(ENTREE,"a")) == NULL)
+    {
+      fprintf(stderr, "\nErreur: Impossible de lire le fichier %s\n",ENTREE);
+      return(EXIT_FAILURE);
+    }
+  
+ 
+ 
 int windows = 0;
 
 float colors[6][3] = { {1,0,1}, {0,0,1},{0,1,1},{0,1,0},{1,1,0},{1,0,0} };
