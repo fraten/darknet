@@ -13,7 +13,8 @@
 #include <stdlib.h>
 
 FILE *fp;
-fopen("C:\test94.txt", "w");
+fp=fopen("C:/test94.txt", "w");
+//fichier = fopen(“C:/Data/fichier1.txt”,”r”);
 
 int windows = 0;
 
@@ -286,7 +287,7 @@ void draw_detections(image im, detection *dets, int num, float thresh, char **na
             printf("%.20f %.20f %.20f %.20f\n", b.x, b.y, b.w, b.h);
             
             
-            fprintf("C:\test94.txt", "%.20f %.20f %.20f %.20f\n", b.x, b.y, b.w, b.h);
+            fprintf(fp, "%.20f %.20f %.20f %.20f\n", b.x, b.y, b.w, b.h);
             
 
             int left  = (b.x-b.w/2.)*im.w;
