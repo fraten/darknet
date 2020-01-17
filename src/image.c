@@ -10,6 +10,7 @@
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb_image_write.h"
 
+fichier = fopen("C:\Users\TOSHIBA\Desktop\besma cadre\part4 labelling\bbox_txt\test.txt", "a");
 int windows = 0;
 
 float colors[6][3] = { {1,0,1}, {0,0,1},{0,1,1},{0,1,0},{1,1,0},{1,0,0} };
@@ -279,6 +280,8 @@ void draw_detections(image im, detection *dets, int num, float thresh, char **na
             rgb[2] = blue;
             box b = dets[i].bbox;
             printf("%.20f %.20f %.20f %.20f\n", b.x, b.y, b.w, b.h);
+            fprintf(fichier, "%.20f %.20f %.20f %.20f\n", b.x, b.y, b.w, b.h);
+            
 
             int left  = (b.x-b.w/2.)*im.w;
             int right = (b.x+b.w/2.)*im.w;
