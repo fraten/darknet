@@ -14,7 +14,7 @@
 
 
 
-#define ENTREE "C:/test94.tx"
+#define ENTREE "C:/test94.txt"
 
 
   FILE *f_in;
