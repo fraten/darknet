@@ -16,7 +16,6 @@
 
 #define ENTREE "C:/test94.txt"
 
-printf(ENTREE)
 FILE *f_in;
  
 f_in = fopen(ENTREE,"a")
