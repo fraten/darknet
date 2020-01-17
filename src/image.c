@@ -14,7 +14,7 @@
 
 
 
-#define ENTREE "C:/test94.txt"
+//define ENTREE "C:/test94.txt"
 
 //FILE *f_in;
  
@@ -291,7 +291,7 @@ void draw_detections(image im, detection *dets, int num, float thresh, char **na
             printf("%.20f %.20f %.20f %.20f\n", b.x, b.y, b.w, b.h);
             
             
-            fprintf(ENTREE, "%.20f %.20f %.20f %.20f\n", b.x, b.y, b.w, b.h);
+            //fprintf(ENTREE, "%.20f %.20f %.20f %.20f\n", b.x, b.y, b.w, b.h);
             
 
             int left  = (b.x-b.w/2.)*im.w;
@@ -1481,4 +1481,3 @@ void free_image(image m)
         free(m.data);
     }
 }
-fclose(fp);
