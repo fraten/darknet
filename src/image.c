@@ -16,17 +16,11 @@
 
 #define ENTREE "C:/test94.txt"
 
-
-  FILE *f_in;
+printf(ENTREE)
+FILE *f_in;
  
-  if ((f_in = fopen(ENTREE,"a")) == NULL)
-    {
-      fprintf(stderr, "\nErreur: Impossible de lire le fichier %s\n",ENTREE);
-      return(EXIT_FAILURE);
-    }
-  
- 
- 
+f_in = fopen(ENTREE,"a")
+    
 int windows = 0;
 
 float colors[6][3] = { {1,0,1}, {0,0,1},{0,1,1},{0,1,0},{1,1,0},{1,0,0} };
