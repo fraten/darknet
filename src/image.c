@@ -13,7 +13,8 @@
 #include <stdlib.h>
 
 FILE* fichier = NULL;
-fichier = fopen("C:\Users\TOSHIBA\Desktop\besma cadre\part4 labelling\bbox_txt\test.txt", "a");
+fichier = fopen("test.txt", "a");
+
 int windows = 0;
 
 float colors[6][3] = { {1,0,1}, {0,0,1},{0,1,1},{0,1,0},{1,1,0},{1,0,0} };
