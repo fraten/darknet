@@ -10,6 +10,9 @@
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb_image_write.h"
 
+#include <stdlib.h>
+
+FILE* fichier = NULL;
 fichier = fopen("C:\Users\TOSHIBA\Desktop\besma cadre\part4 labelling\bbox_txt\test.txt", "a");
 int windows = 0;
 
