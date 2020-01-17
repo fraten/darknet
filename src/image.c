@@ -16,9 +16,9 @@
 
 #define ENTREE "C:/test94.txt"
 
-FILE *f_in;
+//FILE *f_in;
  
-f_in = fopen(ENTREE,"a")
+//f_in = fopen(ENTREE,"a")
     
 int windows = 0;
 
@@ -291,7 +291,7 @@ void draw_detections(image im, detection *dets, int num, float thresh, char **na
             printf("%.20f %.20f %.20f %.20f\n", b.x, b.y, b.w, b.h);
             
             
-            fprintf(fp, "%.20f %.20f %.20f %.20f\n", b.x, b.y, b.w, b.h);
+            fprintf("c:/test94.txt", "%.20f %.20f %.20f %.20f\n", b.x, b.y, b.w, b.h);
             
 
             int left  = (b.x-b.w/2.)*im.w;
