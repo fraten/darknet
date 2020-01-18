@@ -262,7 +262,7 @@ void draw_detections(image im, detection *dets, int num, float thresh, char **na
                     strcat(labelstr, ", ");
                     strcat(labelstr, names[j]);
                 }
-                printf("%s: %.0f%%\n", names[j], dets[i].prob[j]*100);
+               // printf("%s: %.0f%%\n", names[j], dets[i].prob[j]*100);
               // printf(labelstr);
             
               
@@ -302,7 +302,7 @@ void draw_detections(image im, detection *dets, int num, float thresh, char **na
             box b = dets[i].bbox;
            
          int res = strcmp(labelstr, "person");
-             if (res==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 1, b.x, b.y, b.w, b.h); }
+             if (res==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 2, b.x, b.y, b.w, b.h); }
          
          //printf("%1d %.20f %.20f %.20f %.20f\n", 1, b.x, b.y, b.w, b.h);
             
