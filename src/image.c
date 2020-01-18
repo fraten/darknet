@@ -9,7 +9,7 @@
 #include "stb_image.h"
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb_image_write.h"
-
+#include <string.h>
 #include <stdlib.h>
 
 
@@ -263,7 +263,7 @@ void draw_detections(image im, detection *dets, int num, float thresh, char **na
                     strcat(labelstr, names[j]);
                 }
                 //printf("%s: %.0f%%\n", names[j], dets[i].prob[j]*100);
-                //if (names[j] == 'person') { printf("%d ",1); }
+                if (names[j] == 'person') { printf("%d ",1); }
             }
         }
         if(class >= 0){
@@ -289,7 +289,7 @@ void draw_detections(image im, detection *dets, int num, float thresh, char **na
             rgb[1] = green;
             rgb[2] = blue;
             box b = dets[i].bbox;
-            printf("%1d %.20f %.20f %.20f %.20f\n", 1, b.x, b.y, b.w, b.h);
+            //printf("%1d %.20f %.20f %.20f %.20f\n", 1, b.x, b.y, b.w, b.h);
             
             
             //fprintf(ENTREE, "%.20f %.20f %.20f %.20f\n", b.x, b.y, b.w, b.h);
