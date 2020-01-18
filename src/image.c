@@ -268,7 +268,7 @@ void draw_detections(image im, detection *dets, int num, float thresh, char **na
               
              //if(strcmp(chaine, "haha")){ // Ils sont différents printf("Differents.\n"); } else{ printf("Ok.\n"); }            
              
-                if (strcmp(labelstr, "person")) { { printf("non egal.\n"); } else printf("%d \n",1); }
+                if (strcmp(labelstr, "person")) {printf("non egal.\n"); } else {printf("%d \n",1); }
             }
         }
         if(class >= 0){
