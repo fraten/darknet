@@ -262,7 +262,7 @@ void draw_detections(image im, detection *dets, int num, float thresh, char **na
                     strcat(labelstr, ", ");
                     strcat(labelstr, names[j]);
                 }
-                //printf("%s: %.0f%%\n", names[j], dets[i].prob[j]*100);
+                printf("%s: %.0f%%\n", names[j], dets[i].prob[j]*100);
               // printf(labelstr);
             
               
@@ -273,9 +273,7 @@ void draw_detections(image im, detection *dets, int num, float thresh, char **na
                 //printf("Strings are equal"); 
              
              
-             int res = strcmp(labelstr, "person");
-             if (res==0) {printf("%d \n",1); }
-             
+                        
              //   if (strcmp(labelstr, "person")) {printf("non egal.\n"); } else {printf("%d \n",1); }
             }
         }
@@ -302,7 +300,11 @@ void draw_detections(image im, detection *dets, int num, float thresh, char **na
             rgb[1] = green;
             rgb[2] = blue;
             box b = dets[i].bbox;
-            //printf("%1d %.20f %.20f %.20f %.20f\n", 1, b.x, b.y, b.w, b.h);
+           
+         int res = strcmp(labelstr, "person");
+             if (res==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 1, b.x, b.y, b.w, b.h); }
+         
+         //printf("%1d %.20f %.20f %.20f %.20f\n", 1, b.x, b.y, b.w, b.h);
             
             
             //fprintf(ENTREE, "%.20f %.20f %.20f %.20f\n", b.x, b.y, b.w, b.h);
