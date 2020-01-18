@@ -289,7 +289,7 @@ void draw_detections(image im, detection *dets, int num, float thresh, char **na
             rgb[1] = green;
             rgb[2] = blue;
             box b = dets[i].bbox;
-            printf("%.20f %.20f %.20f %.20f\n", b.x, b.y, b.w, b.h);
+           // printf("%.20f %.20f %.20f %.20f\n", b.x, b.y, b.w, b.h);
             
             
             //fprintf(ENTREE, "%.20f %.20f %.20f %.20f\n", b.x, b.y, b.w, b.h);
