@@ -262,13 +262,13 @@ void draw_detections(image im, detection *dets, int num, float thresh, char **na
                     strcat(labelstr, ", ");
                     strcat(labelstr, names[j]);
                 }
-                //printf("%s: %.0f%%\n", names[j], dets[i].prob[j]*100);
+                printf("%s: %.0f%%\n", names[j], dets[i].prob[j]*100);
               // printf(labelstr);
             
               
              //if(strcmp(chaine, "haha")){ // Ils sont différents printf("Differents.\n"); } else{ printf("Ok.\n"); }            
              
-                if (strcmp(labelstr, "person")) { printf("%d \n",1); } else{ printf("non egal.\n"); }
+                if (strcmp(labelstr, "person")) { { printf("non egal.\n"); } else printf("%d \n",1); }
             }
         }
         if(class >= 0){
