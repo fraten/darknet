@@ -263,9 +263,9 @@ void draw_detections(image im, detection *dets, int num, float thresh, char **na
                     strcat(labelstr, names[j]);
                 }
                 //printf("%s: %.0f%%\n", names[j], dets[i].prob[j]*100);
-            // printf(labelstr);
+               printf(labelstr);
             
-                if labelstr=='person' { printf("%d \n",1); }
+                if (labelstr) == 'person' { printf("%d \n",1); }
             }
         }
         if(class >= 0){
