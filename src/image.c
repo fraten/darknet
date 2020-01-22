@@ -304,6 +304,24 @@ void draw_detections(image im, detection *dets, int num, float thresh, char **na
          int res = strcmp(labelstr, "person");
              if (res==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 2, b.x, b.y, b.w, b.h); }
          
+         int res = strcmp(labelstr, "truck");
+             if (res==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 4, b.x, b.y, b.w, b.h); }
+         
+         int res = strcmp(labelstr, "face");
+             if (res==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 1, b.x, b.y, b.w, b.h); }
+         
+         int res = strcmp(labelstr, "car");
+             if (res==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 2, b.x, b.y, b.w, b.h); }
+         
+         int res = strcmp(labelstr, "bus");
+             if (res==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 5, b.x, b.y, b.w, b.h); }
+         
+         int res = strcmp(labelstr, "bycicle");
+             if (res==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 7, b.x, b.y, b.w, b.h); }
+         
+         
+         
+         
          //printf("%1d %.20f %.20f %.20f %.20f\n", 1, b.x, b.y, b.w, b.h);
             
             
