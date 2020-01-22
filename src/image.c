@@ -318,7 +318,9 @@ void draw_detections(image im, detection *dets, int num, float thresh, char **na
          
             int res5 = strcmp(labelstr, "bicycle");
             if (res5==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 7, b.x, b.y, b.w, b.h); }
-         
+            
+            int res6 = strcmp(labelstr, "motorbike");
+            if (res6==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 6, b.x, b.y, b.w, b.h); }         
          
          
          
