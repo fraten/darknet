@@ -241,7 +241,7 @@ struct layer{
     float iou_normalizer;	   
     //float cls_normalizer;
     int iou_loss;
-    int iou_loss;
+    
 
     float * delta;
     float * output;
