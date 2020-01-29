@@ -302,19 +302,19 @@ void draw_detections(image im, detection *dets, int num, float thresh, char **na
             box b = dets[i].bbox;
          
             int res = strcmp(labelstr, "truck");
-            if (res==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 3, b.x, b.y, b.w, b.h); } 
+            if (res==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 4, b.x, b.y, b.w, b.h); } 
             
             int res1 = strcmp(labelstr, "person");
-            if (res1==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 0, b.x, b.y, b.w, b.h); }   
+            if (res1==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 1, b.x, b.y, b.w, b.h); }   
          
-           // int res2 = strcmp(labelstr, "face");
-            //if (res2==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 1, b.x, b.y, b.w, b.h); }
+            int res2 = strcmp(labelstr, "face");
+            if (res2==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 0, b.x, b.y, b.w, b.h); }
          
             int res3 = strcmp(labelstr, "car");
-            if (res3==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 1, b.x, b.y, b.w, b.h); }
+            if (res3==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 2, b.x, b.y, b.w, b.h); }
          
-            int res4 = strcmp(labelstr, "bus");
-            if (res4==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 4, b.x, b.y, b.w, b.h); }
+            //int res4 = strcmp(labelstr, "bus");
+            //if (res4==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 4, b.x, b.y, b.w, b.h); }
          
             int res5 = strcmp(labelstr, "bicycle");
             if (res5==0) {printf("%1d %.20f %.20f %.20f %.20f\n", 6, b.x, b.y, b.w, b.h); }
